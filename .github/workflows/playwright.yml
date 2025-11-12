@@ -26,5 +26,5 @@ jobs:
       - name: Clear Playwright cache
         run: rm -rf ~/.cache/ms-playwright
 
-      - name: Run tests
-        run: mvn test
+      - name: Run tests (headless mode for CI)
+        run: xvfb-run mvn test
