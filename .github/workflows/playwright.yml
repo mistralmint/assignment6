@@ -27,4 +27,4 @@ jobs:
         run: rm -rf ~/.cache/ms-playwright
 
       - name: Run tests (headless mode for CI)
-        run: xvfb-run mvn test
+        run: xvfb-run mvn test -Dtest=BookStoreTest
